@@ -1,5 +1,5 @@
 {
-  "name": "rabbit-iris",
+  "name": "hapi-iris",
   "version": "0.1.0",
   "description": "HAPI plugin to wrap basic RabbitMQ operations",
   "main": "lib/index.js",
@@ -25,7 +25,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PixulHQ/rabbit-hapi.git"
+    "url": "git+https://github.com/PixulHQ/hapi-iris.git"
   },
   "keywords": [
     "hapi",
@@ -38,7 +38,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/PixulHQ/rabbit-hapi/issues"
+    "url": "https://github.com/PixulHQ/hapi-iris/issues"
   },
-  "homepage": "https://github.com/PixulHQ/rabbit-hapi#readme"
+  "homepage": "https://github.com/PixulHQ/hapi-iris#readme"
 }

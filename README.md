@@ -1,6 +1,7 @@
 # Work in Progress
 
-# rabbit-hapi
+# hapi-iris
+
 HAPI plugin to wrap basic RabbitMQ operations based on [amqp library](https://github.com/squaremo/amqp.node) for NodeJS.
 
 This plugin enables these RabbitMQ operations :
@@ -14,6 +15,6 @@ For further informations about RabbitMQ possibilities, see [RabbitMQ official do
 ## Installation
 
 ```bash
-npm install --save rabbit-hapi
+npm install --save hapi-iris
 ```
 
