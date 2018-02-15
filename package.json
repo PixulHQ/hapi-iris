@@ -1,5 +1,5 @@
 {
-  "name": "hapi-iris",
+  "name": "@pixul/hapi-iris",
   "version": "0.1.0",
   "description": "HAPI plugin to wrap basic RabbitMQ operations",
   "main": "lib/index.js",
