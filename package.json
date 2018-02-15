@@ -1,0 +1,44 @@
+{
+  "name": "rabbit-iris",
+  "version": "0.1.0",
+  "description": "HAPI plugin to wrap basic RabbitMQ operations",
+  "main": "lib/index.js",
+  "dependencies": {
+    "amqplib": "0.5.2",
+    "emittery": "0.2.0",
+    "joi": "13.1.1",
+    "uuid": "3.2.1"
+  },
+  "devDependencies": {
+    "code": "5.1.2",
+    "eslint": "4.15.0",
+    "eslint-config-hapi": "11.1.0",
+    "eslint-plugin-hapi": "4.1.0",
+    "eslint-plugin-security": "1.4.0",
+    "hapi": "17.2.0",
+    "lab": "15.2.0",
+    "hoek": "5.0.3"
+  },
+  "scripts": {
+    "test": "lab -f -a code -t 100 -L",
+    "test-cov-html": "lab -f -a code -r html -o coverage.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PixulHQ/rabbit-hapi.git"
+  },
+  "keywords": [
+    "hapi",
+    "rabbitMQ",
+    "AMQP"
+  ],
+  "author": "Pixul",
+  "contributors": [
+    "Yoann MALLEMANCHE <yoann.mallemanche@gmail.com>"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PixulHQ/rabbit-hapi/issues"
+  },
+  "homepage": "https://github.com/PixulHQ/rabbit-hapi#readme"
+}
