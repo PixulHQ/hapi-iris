@@ -15,6 +15,6 @@ For further informations about RabbitMQ possibilities, see [RabbitMQ official do
 ## Installation
 
 ```bash
-npm install --save hapi-iris
+npm install --save @pixul/hapi-iris
 ```
 
