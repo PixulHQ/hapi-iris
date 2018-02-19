@@ -205,5 +205,35 @@ describe('Consumer', () => {
                 await new Publisher(await amqpConnection.getChannel(), { queue }).publish(message);
             });
         });
+
+        it('should requeue the message on error', () => {
+
+            const queue = { name : Uuidv4(), options : autoDeleteOptions };
+
+            const message = Uuidv4();
+
+            let i = 0;
+
+            return new Promise(async (fulfil) => {
+
+                await new Consumer(amqpConnection, {
+                    queue,
+                    consumer : {
+                        receiveFunc : () => {
+
+                            i++;
+
+                            if (i === 2) {
+                                fulfil();
+                            }
+
+                            throw new Error('An Error to try');
+                        }
+                    }
+                }).subscribe();
+
+                await new Publisher(await amqpConnection.getChannel(), { queue }).publish(message);
+            });
+        });
     });
 });
